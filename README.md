@@ -11,7 +11,6 @@ Autores
 Este proyecto fue pensado y desarrollado por:
 -Santiago Otero
 -Santiago Quenguan
--Sofia Pabon
 El README fue hecho por:
 -Santiago Otero
--Sofia Pabon
+
