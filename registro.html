@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Login y Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aplicación de Login y Registro</h1>
+        
+        <div id="login-form" class="form">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" id="login-username" placeholder="Usuario" required>
+            <input type="password" id="login-password" placeholder="Contraseña" required>
+            <button onclick="login()">Iniciar Sesión</button>
+            <p id="login-message"></p>
+            <p>No tienes una cuenta? <a href="#" onclick="toggleForms()">Regístrate aquí</a></p>
+        </div>
+
+        <div id="register-form" class="form" style="display:none;">
+            <h2>Registro</h2>
+            <input type="text" id="register-username" placeholder="Usuario" required>
+            <input type="password" id="register-password" placeholder="Contraseña" required>
+            <button onclick="register()">Registrarse</button>
+            <p id="register-message"></p>
+            <p>Ya tienes una cuenta? <a href="#" onclick="toggleForms()">Inicia sesión aquí</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
