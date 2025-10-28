@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vende tus útiles | DonaQOP</title>
+    <link rel="stylesheet" href="historiadeundertale">
+</head>
+<body>
+
+    <header>
+        <h1>Publica tus útiles</h1>
+        <p>Sube tus útiles escolares con una imagen, descripción y precio.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="vende.html">Vende</a>
+        <a href="dona.html">Dona</a>
+        <a href="contacto.html">Contactos</a>
+    </nav>
+
+    <main class="form-container">
+        <form id="form-publicacion">
+            <label for="imagen">Imagen del útil:</label>
+            <input type="file" id="imagen" accept="image/*" required>
+
+            <label for="nombre">Nombre del útil:</label>
+            <input type="text" id="nombre" placeholder="Ej. Cuaderno Norma" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" placeholder="Estado, color, tamaño..." required></textarea>
+
+            <label for="precio">Precio (en COP):</label>
+            <input type="number" id="precio" min="0" required>
+
+            <button type="submit">Publicar útil</button>
+        </form>
+
+        <section id="publicaciones">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DonaQOP. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

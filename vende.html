@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vende tus útiles | DonaQOP</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>DonaQOP</h1>
+        <p>Publica tus útiles escolares para vender a otros estudiantes</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="vende.html">Vende</a>
+        <a href="dona.html">Dona</a>
+        <a href="contacto.html">Contactos</a>
+    </nav>
+
+    <main class="form-container">
+        <h2>Publicar nuevo útil</h2>
+        <form id="form-publicacion">
+            <label for="imagen">Imagen del útil:</label>
+            <input type="file" id="imagen" accept="image/*" required>
+
+            <label for="nombre">Nombre del útil:</label>
+            <input type="text" id="nombre" placeholder="Ej. Cuaderno Norma" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" placeholder="Estado, color, tamaño..." required></textarea>
+
+            <label for="precio">Precio (en COP):</label>
+            <input type="number" id="precio" min="0" required>
+
+            <button type="submit">Publicar útil</button>
+        </form>
+
+        <section id="publicaciones">
+            <!-- Las publicaciones se agregarán aquí -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DonaQOP. Todos los derechos reservados.</p>
+    </footer>
+<script src="js/vende.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ef0000;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #6200ea;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #3700b3;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main.form-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 1em;
+}
+
+#publicaciones {
+    margin-top: 40px;
+}
+
+.publicacion {
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.publicacion img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
