@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dona útiles | DonaQOP</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>DonaQOP</h1>
+        <p>Dona útiles escolares para ayudar a otros estudiantes</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="vende.html">Vende</a>
+        <a href="dona.html">Dona</a>
+        <a href="contacto.html">Contactos</a>
+    </nav>
+
+    <main class="form-container">
+        <h2>Donar útil escolar</h2>
+        <form id="form-donacion">
+            <label for="imagen-donacion">Imagen del útil:</label>
+            <input type="file" id="imagen-donacion" accept="image/*" required>
+
+            <label for="nombre-donacion">Nombre del útil:</label>
+            <input type="text" id="nombre-donacion" placeholder="Ej. Lápices, colores, libros..." required>
+
+            <label for="descripcion-donacion">Descripción:</label>
+            <textarea id="descripcion-donacion" placeholder="Estado, cantidad, etc." required></textarea>
+
+            <button type="submit">Donar útil</button>
+        </form>
+
+        <p id="mensaje-donacion" style="margin-top:20px; font-weight:bold;"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DonaQOP. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="donar.js"></script>
+</body>
+</html>

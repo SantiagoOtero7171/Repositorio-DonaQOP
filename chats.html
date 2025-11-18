@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat | DonaQOP</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header>
+    <h1>Mensajes</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="vende.html">Vende</a>
+    <a href="dona.html">Dona</a>
+    <a href="chat.html">Chats</a>
+</nav>
+
+<main class="chat-container">
+
+    <!-- Lista de chats -->
+    <aside class="chat-list">
+        <h3>Conversaciones</h3>
+        <div class="chat-item selected">
+            <p><strong>Vendedor #1</strong></p>
+            <span>Haz clic para continuar el chat</span>
+        </div>
+    </aside>
+
+    <!-- Ventana de chat -->
+    <section class="chat-window">
+        <div id="chat-messages" class="messages"></div>
+
+        <form id="chat-form" class="chat-input">
+            <input type="text" id="mensaje" placeholder="Escribe un mensaje..." required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 DonaQOP. Todos los derechos reservados.</p>
+</footer>
+
+<script src="chat.js"></script>
+</body>
+</html>
