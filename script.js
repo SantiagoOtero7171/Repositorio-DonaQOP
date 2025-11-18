@@ -2,7 +2,7 @@
 function toggleForms() {
     const loginForm = document.getElementById('login-form');
     const registerForm = document.getElementById('register-form');
-    
+
     if (loginForm.style.display === 'none') {
         loginForm.style.display = 'block';
         registerForm.style.display = 'none';
@@ -125,3 +125,42 @@ function mostrarPublicacion(data, contenedor) {
 
     contenedor.appendChild(publicacion);
 }
+
+
+
+
+
+async function cargarEmpleos() {
+    try {
+        const response = await fetch("http://localhost:3000/api/jobs");
+
+        if (!response.ok) {
+            throw new Error("Error consultando empleos");
+        }
+
+        const empleos = await response.json();
+
+        mostrarEmpleos(empleos);
+    } catch (err) {
+        console.error(err);
+        document.getElementById("listaEmpleos").innerHTML =
+            "<p>Error cargando empleos</p>";
+    }
+}
+
+function mostrarEmpleos(empleos) {
+    const contenedor = document.getElementById("listaEmpleos");
+
+    contenedor.innerHTML = empleos
+        .map(
+            (empleo) => `
+        <div class="empleo">
+          <h3>${empleo.titulo}</h3>
+          <p>Salario: $${empleo.salario}</p>
+        </div>
+      `
+        )
+        .join("");
+}
+
+cargarEmpleos();
